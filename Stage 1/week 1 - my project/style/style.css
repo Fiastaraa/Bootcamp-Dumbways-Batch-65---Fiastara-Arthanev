@@ -1,0 +1,37 @@
+body {
+  background: linear-gradient(135deg, #ffd1dc, #c1d9ff);
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-gradient {
+  background: linear-gradient(135deg, #ff5fa2, #6a5cff);
+  color: white;
+  border-radius: 25px;
+  border: none;
+}
+
+.btn-gradient:hover {
+  opacity: 0.9;
+}
+
+.form-card {
+  background: rgba(255,255,255,0.9);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.project-card {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.project-card img {
+  height: 180px;
+  object-fit: cover;
+}
+
+.navbar {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+

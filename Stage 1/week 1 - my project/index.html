@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Project</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-white px-4">
+  <a class="navbar-brand fw-bold text-danger" href="#">DW</a>
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fw-bold text-primary" href="#">My Project</a>
+      </li>
+    </ul>
+    <button class="btn btn-gradient px-4">Contact Me</button>
+  </div>
+</nav>
+
+<!-- ADD PROJECT -->
+<div class="container my-5">
+  <h2 class="text-center fw-bold mb-4">ADD MY PROJECT</h2>
+
+  <div class="row justify-content-center">
+    <div class="col-md-7">
+      <div class="card form-card p-4">
+        <form id="projectForm">
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Project Name</label>
+            <input type="text" class="form-control">
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label class="form-label fw-semibold">Start Date</label>
+              <input type="date" class="form-control">
+            </div>
+            <div class="col-md-6 mb-3">
+              <label class="form-label fw-semibold">End Date</label>
+              <input type="date" class="form-control">
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Description</label>
+            <textarea class="form-control" rows="4"></textarea>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Technologies</label>
+            <div class="row">
+              <div class="col-6">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox">
+                  <label class="form-check-label">Node Js</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox">
+                  <label class="form-check-label">React Js</label>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox">
+                  <label class="form-check-label">Next Js</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox">
+                  <label class="form-check-label">TypeScript</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <label class="form-label fw-semibold">Upload Image</label>
+            <input type="file" class="form-control">
+          </div>
+
+          <button class="btn btn-gradient w-100 py-2">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MY PROJECT -->
+<div class="container my-5">
+  <h2 class="text-center fw-bold mb-4">MY PROJECT</h2>
+
+  <div class="row g-4" id="projectContainer">
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+
+
+
+</body>
+</html>
